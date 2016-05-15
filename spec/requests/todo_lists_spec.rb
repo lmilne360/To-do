@@ -1,4 +1,4 @@
-require 'spec_helper'
+require 'rails_helper'
 
 describe "TodoLists" do
   describe "GET /todo_lists" do

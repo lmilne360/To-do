@@ -1,4 +1,4 @@
-require "spec_helper"
+require "rails_helper"
 
 describe TodoListsController do
   describe "routing" do

@@ -1,4 +1,4 @@
-require 'spec_helper'
+require 'rails_helper'
 
 describe "Deketingtodo lists" do
   let!(:todo_list) { TodoList.create(title: "Groceries", description: "Grocery list.") }
