@@ -1,7 +1,5 @@
 source 'https://rubygems.org'
 
-
-
 gem 'rails', '4.2.5.1'
 
 gem 'sqlite3'
@@ -18,6 +16,7 @@ gem 'turbolinks'
 
 gem 'jbuilder', '~> 2.0'
 
+
 group :doc do
 
 gem 'sdoc', require: false
@@ -27,11 +26,18 @@ end
 group :development, :test do
   # Call 'byebug' anywhere in the code to stop execution and get a debugger console
   gem 'byebug'
-  gem 'rspec-rails', '~> 2.0'
+  gem 'rspec-rails', '~> 3.0.0'
+   	# Support for its syntax
+  gem 'rspec-its', '~> 1.0.1'
+  # Support for stubbing model in view specs:
+  gem 'rspec-activemodel-mocks', '~> 1.0.1'
+
+  gem 'rspec-expectations', '~> 3.0.0'
+
 end
 
 group :test do
-	gem 'capybara', '~> 2.1.0'
+	gem 'capybara', '~> 2.3.0'
 end
 
 group :development do
