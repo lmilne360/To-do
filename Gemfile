@@ -26,13 +26,13 @@ end
 group :development, :test do
   # Call 'byebug' anywhere in the code to stop execution and get a debugger console
   gem 'byebug'
-  gem 'rspec-rails', '~> 3.0.0'
+  gem 'rspec-rails', '~> 3.4', '>= 3.4.2'
    	# Support for its syntax
   gem 'rspec-its', '~> 1.0.1'
   # Support for stubbing model in view specs:
   gem 'rspec-activemodel-mocks', '~> 1.0.1'
 
-  gem 'rspec-expectations', '~> 3.0.0'
+  gem 'rspec-expectations', '~> 3.4.0'
 
 end
 
