@@ -28,12 +28,12 @@ describe TodoListsController do
   # This should return the minimal set of values that should be in the session
   # in order to pass any filters (e.g. authentication) defined in
   # TodoListsController. Be sure to keep this updated too.
-  let(:valid_session) { {} }
+  let(:valid_session) { }
 
   describe "GET index" do
     it "assigns all todo_lists as @todo_lists" do
       todo_list = TodoList.create! valid_attributes
-      get :index, {}, valid_session
+      get :index, valid_session
       assigns(:todo_lists).should eq([todo_list])
     end
   end
@@ -48,7 +48,7 @@ describe TodoListsController do
 
   describe "GET new" do
     it "assigns a new todo_list as @todo_list" do
-      get :new, {}, valid_session
+      get :new,  valid_session
       assigns(:todo_list).should be_a_new(TodoList)
     end
   end
